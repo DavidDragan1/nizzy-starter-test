@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import { Logo } from '@/components/logo'
 
+
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="max-w-6xl w-full p-6">
       <div className="flex justify-center bg-secondary dark:bg-secondary/50 py-6 w-full rounded-xl">
@@ -10,7 +12,7 @@ export const Footer = () => {
             <Logo />
           </Link>
           <span className="text-sm">
-            &copy; 2024 YourCompany. All rights reserved.
+            Copyright &copy; {currentYear}. All rights reserved.
           </span>
         </div>
       </div>
